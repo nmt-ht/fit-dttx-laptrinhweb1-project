@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -7,18 +7,18 @@ body{
 }
 
 /* header */
-#menu li a{
+#menu li a {
     font-family: 'Changa One', cursive;
     color: #333333;
 }
 
 #menu li a:hover,
-#menu li.active a{
+#menu li.active a {
     color: #2FA0D5;
     background: none;
 }
 
-#frm-search{
+#frm-search {
     display: block;
     position: relative;
     width: 169px;
@@ -30,20 +30,20 @@ body{
     margin: 0 10px;
 }
 
-#searchword{
+#searchword {
     border: none;
     background: white;
     box-shadow: none;
     padding: 0;
 }
 
-#btn-search{
+#btn-search {
     border: none;
     width: 18px;
     background: url("../images/search_button.png") 0 0 no-repeat;
 }
 
-#social a{
+#social a {
     display: inline-block;
     margin-left: 5px;
     font-size: 0;
@@ -52,30 +52,29 @@ body{
     cursor: pointer;
 }
 
-#social a.twitter{
+#social a.twitter {
     background: url("../images/twitter.png") 0 0 no-repeat;
 }
 
-#social a.twitter:hover{
+#social a.twitter:hover {
     background: url("../images/twitter_active.png") 0 0 no-repeat;
 }
 
-#social a.facebook{
+#social a.facebook {
     background: url("../images/facebook.png") 0 0 no-repeat;
 }
 
-#social a.facebook:hover{
+#social a.facebook:hover {
     background: url("../images/facebook_active.png") 0 0 no-repeat;
 }
 
 /* banner*/
-#banner{
+#banner {
     background: url("../images/bg_slider.gif") center bottom repeat;
     color: white;
-    padding: 110px 0 40px;
 }
 
-#banner h4{
+#banner h4 {
     font-size: 60px;
     line-height: 60px;
     font-family: 'Changa One', cursive;
@@ -83,7 +82,7 @@ body{
     letter-spacing: 1px;
 }
 
-#btn-menu{
+#btn-menu {
     display: inline-block;
     font: 30px 'Changa One', cursive;
     line-height: 36px;
@@ -96,7 +95,7 @@ body{
     color: white;
 }
 
-#dots{
+#dots {
     list-style: none;
     padding: 0;
     text-align: center;
@@ -104,7 +103,7 @@ body{
     line-height: 19px;
 }
 
-#dots li{
+#dots li {
     display: inline-block;
     width: 19px;
     height: 19px;
@@ -116,7 +115,7 @@ body{
     position: relative;
 }
 
-#dots li span{
+#dots li span {
     border-radius: 9px;
     width: 9px;
     height: 9px;
@@ -126,14 +125,14 @@ body{
 }
 
 #dots li.current span,
-#dots li:hover span{
+#dots li:hover span {
     box-shadow: 0;
     background: #73C926;
     cursor: pointer;
 }
 
 /* main */
-h4{
+h4 {
     font-family: 'Changa One', cursive;
     font-weight: 400;
     columns: #333333;
@@ -141,18 +140,18 @@ h4{
     margin: 10px 0;
 }
 
-a.readmore{
+a.readmore {
     text-decoration: underline;
     color: #2FA0D5;
 }
 
 /* about */
-.about{
+.about {
     background: #FA97C2;
     color: #814E64;
 }
 
-h3{
+h3 {
     font-family: 'Changa One', cursive;
     font-size: 60px;
     font-weight: 400;
@@ -160,19 +159,19 @@ h3{
 }
 
 
-.about div > img{
+.about div>img {
     float: left;
     margin: 20px;
 }
 
-#frm-signup{
+#frm-signup {
     border: 3px dashed #814e64;
     padding: 20px 10px;
     border-radius: 10px;
     overflow: auto;
 }
 
-#frm-signup h3{
+#frm-signup h3 {
     font-size: 30px;
     line-height: 28px;
     text-align: center;
@@ -181,7 +180,7 @@ h3{
     color: white;
 }
 
-#frm-signup input{
+#frm-signup input {
     width: 100%;
     border: none;
     border-radius: 5px;
@@ -191,7 +190,7 @@ h3{
     margin-top: 6px 0;
 }
 
-#frm-signup button{
+#frm-signup button {
     float: right;
     border: none;
     border-radius: 14px;
@@ -208,7 +207,7 @@ h3{
 /* news */
 .date {
     text-align: center;
-    background:#73c926;
+    background: #73c926;
     color: white;
     font: 30px 'Changa One', cursive;
     line-height: 30px;
@@ -218,56 +217,120 @@ h3{
 }
 
 /* footer*/
-footer{
+footer {
     background: url("../images/bg.gif") center repeat;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
 }
 
-footer li{
+footer li {
     display: inline-block;
     padding: 0 90px 15px 0;
 }
 
-footer a{
+footer a {
     color: #7c7c7c;
     text-decoration: none;
 }
+
 footer nav a,
-footer a:hover{
+footer a:hover {
     color: white;
     text-decoration: none;
 }
 
 footer nav .active a,
-footer nav a:hover{
+footer nav a:hover {
     color: #FA97C2;
 }
 
 /* about page*/
-#small-banner{
+#small-banner {
     background: url("../images/bg_slider.gif") center top repeat;
     padding: 0.25em;
     content: "";
 }
 
-.round-img{
+.round-img {
     border: nond;
     border-radius: 15px;
     float: left;
     margin-right: 15px;
 }
 
-#testimonials .col{
+#testimonials .col {
     background: url("../images/quot.png") top left no-repeat;
     padding-left: 50px;
 }
 
-#testimonials h3{
+#testimonials h3 {
     margin-left: -10px;
 }
 
-.img-rounded{
-    border-radius: 1em;
+.img-rounded {
+    border-radius: 15px;
+    float: left;
+    margin-right: 15px;
+}
+
+.gallery-item {
+    margin-bottom: 10px;
+}
+
+/*blog*/
+.blog-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.blog-list li {
+    padding-bottom: 10px;
+    padding-left: 24px;
+    background: url(../images/marker1.png) 0 4px no-repeat;
+}
+
+.blog-list a {
+    text-decoration: none;
+    color: #7c7c7c;
+}
+
+.blog-list a:hover {
+    color: #73c926;
+}
+
+.img-thumbnail {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.blog {
+    clear: both;
+}
+
+.comment {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.frm-comment {
+    font-size: 0.75em;
+}
+
+.head {
+    margin-bottom: 10px;
+}
+
+.user{
+    margin-right: 10px;
 }
