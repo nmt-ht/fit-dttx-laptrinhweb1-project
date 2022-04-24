@@ -1,0 +1,98 @@
+{{#each data}}
+  <div class="blog py-3">
+    <div class="head">
+      <h4 class="user">{{name}}</h4>
+      <div>by
+        {{author}}
+        in
+        <a href="#">Blog, {{category.name}}</a>
+        on
+        {{date}}
+        Hits: 208
+        <a href="#">Comments ({{comments.length}})</a></div>
+    </div>
+
+    <div class="py-3">
+      <img src="{{thumbpath}}" alt="" class="img-rounded" />
+      {{{description}}}
+    </div>
+  </div>
+  <div class="py-3 frm-comment">
+    <h4 class="text-dark">Leave your comment</h4>
+    <h4 class="text-dark">Post comment as a guest</h4>
+    <form
+      method="POST"
+      onsubmit="return addComment()"
+      data-blog-id="{{id}}"
+      id="frm-comment"
+    >
+      <div class="row">
+        <div class="form-group form-group-sm col">
+          <label for="name">Name (required)</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder=""
+            required
+          />
+        </div>
+
+        <div class="form-group form-group-sm col">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder=""
+            required
+          />
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row">
+        <div class="form-group form-group-sm col">
+          <label for="comment"></label>
+          <textarea
+            class="form-control"
+            name="comment"
+            id="comment"
+            rows="3"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="row m-0">
+        <div class="form-check form-check-inline col">
+          <label class="form-check-label">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="agree"
+              id="agree"
+              value="false"
+              required
+            />
+            Agree to Terms and Conditions
+          </label>
+        </div>
+        <div class="col text-right">
+          <button type="submit" class="btn btn-link btn-sm">Submit Comment</button>
+        </div>
+      </div>
+    </form>
+    <div class="bg-dark text-uppercase p-1">Comments (({{comments.length}}))</div>
+    {{#each comments}}
+      <div class="row comment">
+        <div>
+          <small><strong>{{name}}</strong> {{date}}</small>
+          <p>{{summary}}</p>
+        </div>
+      </div>
+      <hr />
+    {{/each}}
+  </div>
+{{/each}}

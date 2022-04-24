@@ -1,18 +1,18 @@
 const API = 'https://web1-api.herokuapp.com/api';
 // const AUTH_API = 'https://web1-api.herokuapp.com/users';
-// Handlebars.registerHelper('formatDate', formatDate);
+Handlebars.registerHelper('formatDate', formatDate);
 
-// function formatDate(date) {
-//     let options = {
-//         weekday: 'short',
-//         year: 'numeric',
-//         month: 'short',
-//         day: 'numeric',
-//         timeZoneName: 'short'
-//     };
-//     let str = (new Date(date)).toLocaleString("en-US", options);
-//     return str;
-// }
+function formatDate(date) {
+    let options = {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        timeZoneName: 'short'
+    };
+    let str = (new Date(date)).toLocaleString("en-US", options);
+    return str;
+}
 
 // function loadDetails(request, targetId, source) {
 //     if (arguments.length == 1) {
@@ -111,8 +111,7 @@ function loadData(request, targetId, sourceId){
             }
 
             let target = $(targetId);
-            let source = $(sourceId).html();
-            let template = Handlebars.compile(source);
+            let template = Handlebars.templates[sourceId];
             $(target).html(template(jsonData));
         }
     });
